@@ -8,12 +8,12 @@
 
 ```
 # Add repo and key
-curl -L https://apt.matrix.one/doc/apt-key.gpg | sudo apt-key add -
-echo "deb https://apt.matrix.one/raspbian $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/matrixlabs.list
+curl -L https://S3.amazonaws.com/apt.matrix.one/doc/apt-key.gpg | sudo apt-key add -
+echo "deb https://S3.amazonaws.com/apt.matrix.one/raspbian $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/matrixlabs.list
 
 # Update repo and packages
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get update --allow-releaseinfo-change
+sudo apt-get upgrade --allow-authenticated=yes
 
 # Install MATRIX HAL Packages
 sudo apt-get install matrixio-creator-init libmatrixio-creator-hal libmatrixio-creator-hal-dev
@@ -29,12 +29,12 @@ The compiled MATRIX HAL library file is installed in /usr/lib/libmatrix_creator_
 
 ```
 # Add repo and key
-curl -L https://apt.matrix.one/doc/apt-key.gpg | sudo apt-key add -
-echo "deb https://apt.matrix.one/raspbian $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/matrixlabs.list
+curl -L https://S3.amazonaws.com/apt.matrix.one/doc/apt-key.gpg | sudo apt-key add -
+echo "deb https://S3.amazonaws.com/apt.matrix.one/raspbian $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/matrixlabs.list
 
 # Update repo and packages
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get update --allow-releaseinfo-change
+sudo apt-get upgrade --allow-authenticated=yes
 
 # Install MATRIX HAL Packages and Build Prerequisites
 sudo apt-get install cmake g++ git libfftw3-dev wiringpi libgflags-dev matrixio-creator-init
