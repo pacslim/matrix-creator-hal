@@ -13,7 +13,7 @@ echo "deb https://S3.amazonaws.com/apt.matrix.one/raspbian $(lsb_release -sc) ma
 
 # Update repo and packages
 sudo apt-get update --allow-releaseinfo-change
-sudo apt-get upgrade --allow-authenticated=yes
+sudo apt-get upgrade --allow-unauthenticated=yes
 
 # Install MATRIX HAL Packages
 sudo apt-get install matrixio-creator-init libmatrixio-creator-hal libmatrixio-creator-hal-dev
@@ -34,7 +34,7 @@ echo "deb https://S3.amazonaws.com/apt.matrix.one/raspbian $(lsb_release -sc) ma
 
 # Update repo and packages
 sudo apt-get update --allow-releaseinfo-change
-sudo apt-get upgrade --allow-authenticated=yes
+sudo apt-get upgrade --allow-unauthenticated=yes
 
 # Install MATRIX HAL Packages and Build Prerequisites
 sudo apt-get install cmake g++ git libfftw3-dev wiringpi libgflags-dev matrixio-creator-init
