@@ -9,7 +9,7 @@
 ```
 # Add repo and key
 curl -L https://S3.amazonaws.com/apt.matrix.one/doc/apt-key.gpg | sudo apt-key add -
-echo "deb https://S3.amazonaws.com/apt.matrix.one/raspbian $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/matrixlabs.list
+echo "deb https://web.archive.org/web/20211204221322/https://S3.amazonaws.com/apt.matrix.one/raspbian $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/matrixlabs.list
 
 # Update repo and packages
 sudo apt-get update --allow-releaseinfo-change
@@ -29,8 +29,8 @@ The compiled MATRIX HAL library file is installed in /usr/lib/libmatrix_creator_
 
 ```
 # Add repo and key
-curl -L https://S3.amazonaws.com/apt.matrix.one/doc/apt-key.gpg | sudo apt-key add -
-echo "deb https://S3.amazonaws.com/apt.matrix.one/raspbian $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/matrixlabs.list
+curl -L https://web.archive.org/web/20211204221322/https://S3.amazonaws.com/apt.matrix.one/doc/apt-key.gpg | sudo apt-key add -
+echo "deb https://web.archive.org/web/20211204221322/https://S3.amazonaws.com/apt.matrix.one/raspbian $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/matrixlabs.list
 
 # Update repo and packages
 sudo apt-get update --allow-releaseinfo-change
